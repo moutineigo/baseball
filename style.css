@@ -170,8 +170,15 @@ a {
 
 .section-calendar {
   max-width: none;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+@media (max-width: 768px) {
+  .section-calendar {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 /* iframe Çâ°ïù100%Ç… */
