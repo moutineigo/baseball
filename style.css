@@ -167,19 +167,23 @@ a {
 }
 
 /* calender */
+
+.section-calendar {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* iframe Çâ°ïù100%Ç… */
 .calendar-wrapper {
-  position: relative;
   width: 100%;
-  padding-top: 75%;
+  height: 900px;
   margin-top: 24px;
 }
 
+/* iframe é©ëÃ */
 .calendar-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   border: none;
-  border-radius: 12px;
 }
