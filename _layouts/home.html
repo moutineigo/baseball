@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <p>日々の活動はインスタグラムにて発信中</p>
+</section>
+
+<section class="section">
+  <h2>ニュース</h2>
+  <ul class="news-list">
+    {% for post in site.posts limit:3 %}
+      <li>
+        <span class="date">{{ post.date | date: "%Y.%m.%d" }}</span>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <p class="more-link"><a href="{{ site.baseurl }}/news/">ニュース一覧へ</a></p>
+</section>
+
+<section id="schedule" class="section section-calendar">
+  <h2>今月の予定</h2>
+  <div class="calendar-wrapper">
+    <iframe
+      src="https://calendar.google.com/calendar/embed?src=iwatabc26@gmail.com&ctz=Asia%2FTokyo&mode=MONTH&showTitle=0&showTabs=0&showCalendars=0"
+      frameborder="0"
+      scrolling="no"></iframe>
+  </div>
+</section>
+
+<section id="join" class="section">
+  <h2>入部について</h2>
+  <p>入部希望・練習参加希望の方は、InstagramのDMまたは連絡先へご連絡ください。</p>
+</section>
+
+<section id="faq" class="section">
+  <h2>よくある質問</h2>
+  <ul class="simple-list">
+    <li><strong>Q.</strong> 見学できますか？ <strong>A.</strong> 可能です。事前にご連絡ください。</li>
+    <li><strong>Q.</strong> 練習場所は？ <strong>A.</strong> スケジュールをご確認ください。</li>
+  </ul>
+</section>
+
+<section id="links" class="section">
+  <h2>リンク</h2>
+  <ul class="simple-list">
+    <li><a href="https://www.instagram.com/iwata.baseballclub/" target="_blank" rel="noopener">Instagram</a></li>
+  </ul>
+</section>

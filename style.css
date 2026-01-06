@@ -194,3 +194,41 @@ a {
   height: 100%;
   border: none;
 }
+
+
+
+/* news */
+
+.more-link {
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+.post-date {
+  color: #666;
+  font-size: 13px;
+  margin: 8px 0 18px;
+}
+
+.post-body {
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.simple-list {
+  list-style: none;
+  padding: 0;
+}
+
+.simple-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.pager {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 14px;
+}

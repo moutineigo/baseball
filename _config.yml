@@ -1,0 +1,14 @@
+title: 磐田ベースボールクラブ
+description: 公式サイト
+url: https://moutineigo.github.io
+baseurl: /baseball
+
+timezone: Asia/Tokyo
+lang: ja
+
+# ニュース一覧を10件ずつページング
+paginate: 10
+paginate_path: "/news/page:num/"
+
+plugins:
+  - jekyll-paginate

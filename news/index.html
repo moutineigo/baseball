@@ -1,0 +1,27 @@
+---
+layout: default
+title: ニュース
+---
+
+<section class="section">
+  <h2>ニュース</h2>
+
+  <ul class="news-list">
+    {% for post in paginator.posts %}
+      <li>
+        <span class="date">{{ post.date | date: "%Y.%m.%d" }}</span>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class="pager">
+    {% if paginator.previous_page %}
+      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}">← 前へ</a>
+    {% endif %}
+
+    {% if paginator.next_page %}
+      <a href="{{ site.baseurl }}{{ paginator.next_page_path }}">次へ →</a>
+    {% endif %}
+  </div>
+</section>

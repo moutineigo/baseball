@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>{% if page.title %}{{ page.title }}｜{% endif %}{{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">IWATA BASEBALL CLUB</div>
+
+    <nav class="nav-pc">
+      <a href="{{ site.baseurl }}/">TOP</a>
+      <a href="{{ site.baseurl }}/news/">ニュース</a>
+      <a href="{{ site.baseurl }}/#schedule">スケジュール</a>
+      <a href="{{ site.baseurl }}/#join">入部について</a>
+      <a href="{{ site.baseurl }}/#faq">よくある質問</a>
+      <a href="{{ site.baseurl }}/#links">リンク</a>
+    </nav>
+
+    <div class="header-instagram">
+      <a href="https://www.instagram.com/iwata.baseballclub/" target="_blank" rel="noopener">
+        <img src="{{ site.baseurl }}/images/instagram.png" alt="Instagram">
+      </a>
+    </div>
+
+    <!-- スマホ用ハンバーガー -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="hamburger">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav-sp">
+      <a href="{{ site.baseurl }}/">TOP</a>
+      <a href="{{ site.baseurl }}/news/">ニュース</a>
+      <a href="{{ site.baseurl }}/#schedule">スケジュール</a>
+      <a href="{{ site.baseurl }}/#join">入部について</a>
+      <a href="{{ site.baseurl }}/#faq">よくある質問</a>
+      <a href="{{ site.baseurl }}/#links">リンク</a>
+      <a class="sp-instagram" href="https://www.instagram.com/iwata.baseballclub/" target="_blank" rel="noopener">
+        Instagram
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  {{ content }}
+</main>
+
+<footer class="footer">
+  <p>IWATA BASEBALL CLUB</p>
+</footer>
+
+</body>
+</html>
