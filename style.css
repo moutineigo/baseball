@@ -232,3 +232,13 @@ a {
   gap: 12px;
   font-size: 14px;
 }
+
+/* ヘッダー（PC）＋スマホメニュー共通 */
+.header,
+.nav-sp {
+  background: linear-gradient(
+    to bottom,
+    #0a3f8a 0%,
+    #0d4ea3 100%
+  );
+}
