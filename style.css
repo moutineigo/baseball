@@ -243,3 +243,20 @@ a {
 
   );
 }
+
+/* google form*/
+.form-section {
+  padding: 32px 16px;
+}
+
+.form-section h2 {
+  margin-bottom: 16px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  iframe {
+    height: 1100px; /* スマホは縦が長い */
+  }
+}
