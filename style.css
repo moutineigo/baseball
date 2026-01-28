@@ -35,6 +35,14 @@ a {
   font-weight: bold;
 }
 
+.logo a,
+.logo a:visited,
+.logo a:hover,
+.logo a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
 /* PCナビ */
 .nav-pc {
   margin-left: auto;
