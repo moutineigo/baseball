@@ -54,5 +54,19 @@
   <p>IWATA BASEBALL CLUB</p>
 </footer>
 
+<script>
+  (function () {
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.querySelector('.nav-sp');
+    if (!toggle || !menu) return;
+
+    menu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        toggle.checked = false; // メニューを閉じる
+      });
+    });
+  })();
+</script>
+
 </body>
 </html>
