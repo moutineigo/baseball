@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+x<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -7,11 +7,25 @@
   <link rel="icon" href="{{ site.baseurl }}/images/favicon.png" type="image/png">
   <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
 
+  <!-- SEO -->
+  <meta name="description" content="磐田ベースボールクラブ公式サイト。静岡県磐田市を拠点に活動する中学生向け軟式野球クラブ。体験会・スケジュール・最新ニュースを掲載。">
+  <meta name="keywords" content="磐田ベースボールクラブ, 磐田 野球, 中学生 野球, 軟式野球">
+
   <!-- robots -->
   {% if site.env == "production" %}
   <meta name="robots" content="index, follow">
   {% else %}
   <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+
+  <!-- OGP / canonical（only production） -->
+  {% if site.env == "production" %}
+    <meta property="og:title" content="磐田ベースボールクラブ 公式サイト">
+    <meta property="og:description" content="静岡県磐田市で活動する中学生向け軟式野球クラブ。体験会・最新情報を発信中。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ '/images/ogp.png' | absolute_url }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
   {% endif %}
 
 </head>
