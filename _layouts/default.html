@@ -72,11 +72,15 @@
   </div>
 </header>
 
-<main class="main">
-  <div class="container">
-    {{ content }}
-  </div>
-</main>
+{% if page.url == "/" %}
+  {{ content }}
+{% else %}
+  <main class="main">
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+{% endif %}
 
 <footer class="footer">
   <p>IWATA BASEBALL CLUB</p>
