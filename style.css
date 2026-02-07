@@ -289,3 +289,8 @@ a {
   margin: 0 auto;
   padding: 24px 16px;
 }
+
+.closed {
+  text-decoration: line-through;
+  color: #999;
+}
