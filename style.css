@@ -291,6 +291,12 @@ a {
 }
 
 .closed {
-  text-decoration: line-through;
   color: #999;
+}
+
+.closed .strike {
+  text-decoration: line-through;
+}
+
+.closed-text {
 }
