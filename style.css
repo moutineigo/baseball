@@ -302,7 +302,15 @@ a {
   font-weight: normal;
 }
 
+/* 記事内の画像は必ず本文幅に収める */
 .post-body img{
+  display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+/* 念のため：横はみ出しが起きても “切らずに” スクロールできるようにする */
+.post-body{
+  overflow-x: auto;
 }
