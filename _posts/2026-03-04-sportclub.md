@@ -12,7 +12,11 @@ date: 2026-03-04
 
 掲載記事は以下の通りです。
 
-[静岡新聞DIGITAL 掲載記事はこちら](https://news.at-s.com/article/1921338)
+<p>
+<a href="https://news.at-s.com/article/1921338" target="_blank" rel="noopener">
+静岡新聞DIGITAL 掲載記事はこちら
+</a>
+</p>
 
 ---
 
