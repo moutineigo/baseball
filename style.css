@@ -314,3 +314,60 @@ a {
 .post-body{
   overflow-x: auto;
 }
+
+
+
+/* 協賛企業 */
+.sponsors-section {
+  padding-top: 20px;
+}
+
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  align-items: center;
+}
+
+.sponsor-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sponsor-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.sponsor-card img {
+  display: block;
+  max-width: 100%;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .sponsors-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .sponsor-card {
+    min-height: 96px;
+    padding: 12px;
+  }
+
+  .sponsor-card img {
+    max-height: 56px;
+  }
+}

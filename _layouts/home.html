@@ -141,3 +141,23 @@ layout: default
     </li>
   </ul>
 </section>
+
+<section id="sponsors" class="section sponsors-section">
+  <h2>協賛企業</h2>
+  <div class="sponsors-grid">
+    {% for sponsor in site.data.sponsors %}
+      <a
+        class="sponsor-card"
+        href="{{ sponsor.url }}"
+        target="_blank"
+        rel="noopener"
+        aria-label="{{ sponsor.name }}"
+      >
+        <img
+          src="{{ sponsor.logo | relative_url }}"
+          alt="{{ sponsor.alt | default: sponsor.name }}"
+        >
+      </a>
+    {% endfor %}
+  </div>
+</section>
