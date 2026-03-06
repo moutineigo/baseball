@@ -380,8 +380,10 @@ a {
 */
 
 .sponsor-card img {
-  max-height: 50px;   /* ← ロゴ高さを統一 */
+  max-height: 50px;
+  max-width: 100%;
   width: auto;
+  height: auto;
   object-fit: contain;
   margin-bottom: 8px;
 }
