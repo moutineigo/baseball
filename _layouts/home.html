@@ -158,7 +158,7 @@ layout: default
           alt="{{ sponsor.alt | default: sponsor.name }}"
         >
         <div class="sponsor-name">
-         {{ sponsor.name }}
+         {{ sponsor.name | markdownify }}
         </div>
       </a>
     {% endfor %}
