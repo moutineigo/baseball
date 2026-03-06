@@ -329,6 +329,7 @@ a {
   align-items: center;
 }
 
+/*
 .sponsor-card {
   display: flex;
   align-items: center;
@@ -343,12 +344,31 @@ a {
   flex-direction: column;
   text-align: center;
 }
+*/
+
+.sponsor-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 140px;      /* ← 高さを固定 */
+  padding: 16px;
+
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+
+  text-align: center;
+}
+
 
 .sponsor-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
+/*
 .sponsor-card img {
   display: block;
   max-width: 100%;
@@ -356,6 +376,14 @@ a {
   width: auto;
   height: auto;
   object-fit: contain;
+}
+*/
+
+.sponsor-card img {
+  max-height: 50px;   /* ← ロゴ高さを統一 */
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 768px) {
@@ -374,6 +402,7 @@ a {
   }
 }
 
+/*
 .sponsor-name {
   width: 100%;
   margin-top: 10px;
@@ -381,4 +410,11 @@ a {
   color: #333;
   text-align: center;
   line-height: 1.6;
+}
+*/
+
+.sponsor-name {
+  font-size: 13px;
+  color: #444;
+  line-height: 1.4;
 }
