@@ -280,7 +280,7 @@ a {
 
 @media (max-width: 768px) {
   iframe {
-    height: 1100px; /* スマホは縦が長い */
+    height: 1100px;
   }
 }
 
@@ -302,7 +302,6 @@ a {
   font-weight: normal;
 }
 
-/* 記事内の画像は必ず本文幅に収める */
 .post-body img{
   display: block;
   width: 100%;
@@ -310,7 +309,6 @@ a {
   height: auto;
 }
 
-/* 念のため：横はみ出しが起きても “切らずに” スクロールできるようにする */
 .post-body{
   overflow-x: auto;
 }
@@ -329,30 +327,13 @@ a {
   align-items: center;
 }
 
-/*
-.sponsor-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 120px;
-  padding: 16px;
-  background: #fff;
-  border: 1px solid #e5e5e5;
-  border-radius: 12px;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  flex-direction: column;
-  text-align: center;
-}
-*/
-
 .sponsor-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  height: 140px;      /* ← 高さを固定 */
+  height: 140px;
   padding: 16px;
 
   background: #fff;
@@ -367,17 +348,6 @@ a {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
-
-/*
-.sponsor-card img {
-  display: block;
-  max-width: 100%;
-  max-height: 80px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-}
-*/
 
 .sponsor-card img {
   max-height: 50px;
@@ -403,17 +373,6 @@ a {
     max-height: 56px;
   }
 }
-
-/*
-.sponsor-name {
-  width: 100%;
-  margin-top: 10px;
-  font-size: 14px;
-  color: #333;
-  text-align: center;
-  line-height: 1.6;
-}
-*/
 
 .sponsor-name {
   font-size: 13px;
