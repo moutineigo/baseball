@@ -157,6 +157,9 @@ layout: default
           src="{{ sponsor.logo | relative_url }}"
           alt="{{ sponsor.alt | default: sponsor.name }}"
         >
+        <div class="sponsor-name">
+         {{ sponsor.name }}
+        </div>
       </a>
     {% endfor %}
   </div>

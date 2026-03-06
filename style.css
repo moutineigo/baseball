@@ -340,6 +340,7 @@ a {
   border-radius: 12px;
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex-direction: column;
 }
 
 .sponsor-card:hover {
@@ -370,4 +371,11 @@ a {
   .sponsor-card img {
     max-height: 56px;
   }
+}
+
+.sponsor-name {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
 }
